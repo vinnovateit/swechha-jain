@@ -349,11 +349,7 @@
 						call away. Connect with me, and give me an opportunity
 						to serve your soul journey..
 					</p>
-					<form
-						action="mailto:swechha.soulscience@gmail.com"
-						method="post"
-						enctype="text/plain"
-					>
+					<form>
 						<div class="fields">
 							<div class="field">
 								<label for="name">Name</label>
@@ -374,7 +370,11 @@
 						</div>
 						<ul class="actions">
 							<li>
-								<input type="submit" value="Send Message" />
+								<input
+									type="button"
+									onclick="sendmail()"
+									value="Send Message"
+								/>
 							</li>
 						</ul>
 					</form>
@@ -420,6 +420,10 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<!-- SMPTJS -->
+
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<!-- SMPTJS -->
 		<script>
 			//Smooth scrolling with links
 			$("a[href*=\\#]").on("click", function (event) {
@@ -429,6 +433,22 @@
 					500
 				);
 			});
+
+			// FOR SENDING MAIL
+			function sendmail() {
+				var name = document.getElementById("name").value;
+				var email = document.getElementById("email").value;
+				var mess = document.getElementById("message").value;
+				Email.send({
+					Host: "smtp.elasticemail.com",
+					Username: "swechha.soulscience@gmail.com",
+					Password: "C8FC3CB1486DE268B376D99C922807A68FD9",
+					To: "wimpywarlord@gmail.com",
+					From: `${email}`,
+					Subject: `Query From User : ${name}`,
+					Body: `${mess}`,
+				}).then((message) => alert(message));
+			}
 		</script>
 	</body>
 </html>
