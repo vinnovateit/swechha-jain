@@ -3557,7 +3557,7 @@ body.is-menu-visible #menu .inner {
 @media screen and (max-width: 1280px) {
   #banner {
     padding: 7em 0 8.25em 0;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%),
+    background-image: linear-gradient(120deg, #f6eee1 0%, #f6eee1 100%),
       url("../../images/bg.jpg");
     background-size: auto, cover;
     background-position: center, center;
