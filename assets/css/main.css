@@ -188,7 +188,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-image: linear-gradient(120deg, #f6eee1 0%, #f6eee1 100%);
   background-size: auto, cover;
   background-attachment: fixed, fixed;
   background-position: center, center;
@@ -3103,7 +3103,7 @@ button:disabled,
 
 .features article {
   padding: 1.75em 1.75em 0.1em 1.75em;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(120deg, #f6eee1 0%, #f6eee1 100%);
   border-radius: 5px;
   margin: 1.5em 3em 1.5em 0;
   width: calc(50% - 1.5em);
@@ -3557,7 +3557,7 @@ body.is-menu-visible #menu .inner {
 @media screen and (max-width: 1280px) {
   #banner {
     padding: 7em 0 8.25em 0;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%),
+    background-image: linear-gradient(120deg, #f6eee1 0%, #f6eee1 100%),
       url("../../images/bg.jpg");
     background-size: auto, cover;
     background-position: center, center;
@@ -3661,7 +3661,7 @@ body.is-preload #banner p {
 @media screen and (max-width: 1280px) {
   #wrapper > header {
     padding: 9em 0 6.25em 0;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%),
+    background-image: linear-gradient(120deg, #f6eee1 0%, #f6eee1 100%),
       url("../../images/bg.jpg");
     background-size: auto, cover;
     background-position: center, 0% 30%;
@@ -4136,7 +4136,7 @@ body.is-preload #banner p {
 
 @media screen and (max-width: 1280px) {
   #footer {
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%),
+    background-image: linear-gradient(120deg, #f6eee1 0%, #f6eee1 100%),
       url("../../images/bg.jpg");
     background-size: auto, cover;
     background-position: center, center;
