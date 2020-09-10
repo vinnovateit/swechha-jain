@@ -436,15 +436,11 @@
 			});
 
 			function sendmail(params) {
-				Email.send({
-					Host: "smtp.elasticemail.com",
-					Username: "swechha.soulscience@gmail.com",
-					Password: "28D2CAE4D867670F86C115FD547DCA9B6D1D",
-					To: "wimpywarlord@gmail.com",
-					From: "swechha.soulscience@gmail.com",
-					Subject: "This is the subject",
-					Body: "And this is the body",
-				}).then((message) => alert(message));
+				var name = document.getElementById("name").value;
+				var email = document.getElementById("email").value;
+				console.log(email);
+				var mess = document.getElementById("message").value;
+				window.location.href = `mailto:swechha.soulscience@gmail.com?subject=Query&body=${mess}`;
 			}
 		</script>
 	</body>
